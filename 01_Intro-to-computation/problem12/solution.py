@@ -1,4 +1,4 @@
-k = 2400012348715368647    # number of which we have to find the square root
+k = 2400012348715369    # number of which we have to find the square root
 # Newton-Raphson for square root
 # Find x such that x**2 -24 is within epsilon of 0.01
 nr_count = 0
