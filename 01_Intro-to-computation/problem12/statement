@@ -1,0 +1,11 @@
+Add some code to the implementation of Newton-Raphson that keeps track of the number of iteration used to find the root.
+- Use that code as part of program that compares the efficiency of Newton-Raphson and bisection search.
+
+Code:
+# Newton-Raphson for square root
+# Find x such that x**2 -24 is within epsilon of 0.01
+epsilon = 0.01
+guess = k/2
+while abs(guess**2 - k) >= epsilon:
+    guess = guess - (((guess**2) - k)/(2*guess))
+print(f'Square root of {k} is about {guess}')
