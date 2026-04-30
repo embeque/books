@@ -1,4 +1,4 @@
-k = 24    # number of which we have to find the square root
+k = 2400012348715368647    # number of which we have to find the square root
 # Newton-Raphson for square root
 # Find x such that x**2 -24 is within epsilon of 0.01
 nr_count = 0
@@ -11,7 +11,7 @@ print(f'Square root of {k} is about {guess} with Newton-Raphson method with numb
 
  
 # Exact copy paste of code from bisection search with some editing
-x = 24
+x = k
 # changed to find the cube root of the number
 
 epsilon = 0.01
@@ -28,3 +28,5 @@ while abs(ans**2 - x) >= epsilon:
     ans = (high + low) / 2
 
 print(f'Square root of {x} is about {ans} with Bisection method with number of guesses {num_guesses}')
+effi = (num_guesses - nr_count)*100 / num_guesses
+print(f'Newton-Raphson method is {effi:.2f}% times more efficient then bisection method')
